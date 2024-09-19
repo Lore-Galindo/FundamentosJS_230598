@@ -49,3 +49,4 @@ console.log(`creo que es ${miColorFavorito}le atiné?`)
 console.log("analizando los datos puedo decir que:");
 console.log("miColorFvaorito:",typeof(miColorFavorito))
 console.log("miFechaNacimiento es del tipo:",typeof(miFechaNacimiento))
+

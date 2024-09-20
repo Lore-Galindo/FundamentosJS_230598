@@ -2,61 +2,74 @@ html
 {
     box-sizing: border-box;
     font-size: 62.5%;
+
 }
-/* Estaspropiedades desfinen el tamaño de la fuemnte de tooda la pagina y afrefaer ,margenes de tipo caja*/
+
+/* Estas propiedades definen el tamaño de la fuente de toda la página y agregar margenes del tipo caja*/
+
 body{
-    font-size: 1.6ren;
-    font-family: 'lalo' sans-serif;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
     background-color: #577dbb;
-
 }
 
-*,* ::before,*::after{
-    box-sizing: inherit;
+*, *:before, *:after{
+box-sizing: inherit;
 }
+
 header{
-    padding: 3rem 0;
+    padding: 3rm 0;
 }
+
 header h1{
-    color: #ffffff;
     text-align: center;
+    color: #ffffff;
     font-size: 6rem;
 }
-header p{
+
+header P{
     color: #1b1b1b;
     text-align: center;
     font-size: 3.2rem;
+
 }
+
 header p a {
     text-decoration: none;
     color: #4cabea;
 
 }
-.DOM {
+
+.DOM{
     max-width: 120rem;
     margin: 0 auto;
 }
+
 .DOM h2{
     color: #fff;
     text-align: center;
 
 }
+
 .DOM nav a{
-    color: #fff;
-    font-size: 20px;
+    color: #FFF;
+    font-size: 20PX;
     text-decoration: none;
     margin-right: 10px;
-}
-.DOM p {
-    color: #2563eb;
-    font-size: 20px;
 
 }
-.DOM #formulario{
+
+.DOM p{
+    color: #2563EB;
+    font-size: 20PX;
+}
+
+.DOM #fromulario{
     max-width: 500px;
     margin: 0 auto;
 }
-.DOM #formulario input {
+
+.DOM #formulario input{
     display: block;
     width: 100%;
     border: none;
@@ -64,14 +77,18 @@ header p a {
     padding: 2rem;
     border-radius: 1rem;
 }
+
+
 .DOM #formulario input[type="submit"]{
     background-color: #2563EB;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 20px;
-    color:#fff
+    font-size: 20PX;
+    color: #fff;
+
 }
-.alert{
+
+.alerta{
     padding: 1rem;
     text-align: center;
     color: #fff;
@@ -79,9 +96,11 @@ header p a {
     font-size: 20px;
 
 }
-.alerr.error{
-    background-color: rgb(162,0,0);
+
+.alerta.error{
+    background-color: rgb(162, 0, 0);
 }
-.alert.exito{
-    background-color: rgb(7,145,7);
+
+.alerta.exito{
+    background-color: rgb(7, 145, 7);
 }

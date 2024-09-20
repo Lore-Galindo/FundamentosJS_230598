@@ -178,3 +178,68 @@ console.log("Se comparó numero1 con número5, determinando que tienenen el mism
 
 else
 console.log("Se comparó numero1 con numero5, determinando que tienene el mismo valor, pero NO es el mismo tipo de Dato.")
+
+console.log(`¿Es 5===symbol(5.0)?, antes de compararlos analizamos que tipo de dato son: siendo numero1  del tipo ${typeof(numero1)} y numero7  del tipo ${typeof(numero7)}`);
+if(numero1==numero7) //estrictamente igual "===" (Equidad)= mismo valor, mismo tipo d dato
+
+console.log("Se comparó numero1 con número5, determinando que tienenen el mismo valor y el mismo tipo de dato")
+
+else
+console.log("Se comparó numero1 con numero5, determinando que tienene el mismo valor, pero NO es el mismo tipo de Dato.")
+
+console.log(`¿Es 5===symbol("5")?, antes de compararlos analizamos que tipo de dato son: siendo numero1 ${typeof(numero1)} y numero5  del tipo ${typeof(numero8)}`);
+if(numero1==numero8) //estrictamente igual "===" (Equidad)= mismo valor, mismo tipo d dato
+
+console.log("Se comparó numero1 con número5, determinando que tienenen el mismo valor y el mismo tipo de dato")
+
+else
+console.log("Se comparó numero1 con numero8, determinando que tienene el mismo valor, pero NO es el mismo tipo de Dato.")
+
+console.log(`¿Es 5===symbol("5.0")?, antes de compararlos analizamos que tipo de dato son: siendo numero1 ${typeof(numero1)} y numero5  del tipo ${typeof(numero9)}`);
+if(numero1==numero9) //estrictamente igual "===" (Equidad)= mismo valor, mismo tipo d dato
+
+console.log("Se comparó numero1 con número5, determinando que tienenen el mismo valor y el mismo tipo de dato")
+
+else
+console.log("Se comparó numero1 con numero9, determinando que tienene el mismo valor, pero NO es el mismo tipo de Dato.")
+
+console.log(`¿Es Symbol(5) === symbol(5)?, antes de compararlos analizamos que tipo de dato son: siendo numero1 ${typeof(numero5)} y numero5  del tipo ${typeof(numero6)}`);
+if(numero1==numero6) //estrictamente igual "===" (Equidad)= mismo valor, mismo tipo d dato
+
+console.log("Se comparó numero5 con número6, determinando que tienenen el mismo valor ")
+
+else
+console.log("Se comparó numero5 con numero6, determinando que tienene el mismo valor, y el mismoo tipo de dato,es la condicion de Symbol la que lo hace unico en la memoria.")
+
+// 7.NULL
+
+console.warn("-- Tipo de dato--NULL (Nulo o Vacio)");
+
+let nombreUsuario = null;
+let passUsuario = null;
+let generoUsuario = null;
+let generoRelacionSentimental= null;
+let fecha_UltimoPost;
+
+//Supongamos que estamos programando una racha Social,tipo facebook,en la que parte de la informacionse publicara en el perfil del usuario
+//si el usuario no ha iniciado sesion en el dispositivo movil o en la aplicacion web,puede explorar contenido de acceso publico.y no existira informacion para mostrar
+//en la HU (Historia de usuario),que el usurio deswea lograrse debera ingresar su numbero telefonico o correo electronico y una contraseña que deberemos guardar en las variables previamente declaradas 
+//Supongamos que el usuario:Lorena Galindo con correo electronico lorena01galindo@.gmail.com DESEA INGRESAR CON SU CONTRASEÑA :pass123
+
+nombreUsuario="lorena01galindo@.gmail.com";
+passUsuario="pass123";
+
+// en este momemto de ejecucion del sistema no sabemos sus genero, ni su estatus de relacion sentimkemtal.
+
+console.log(`El usuario: ${nombreUsuario} esta intentando lograrse con una contraseña de:
+    ${passUsuario}`);
+     // Lo que prosigue es  que el sistema contejara los datos ingresados con la base de datos y en el caso de que los datos sean corresctos comenzara la sesion en la plataforma actualizaremos estos valores
+     
+     //Dado que Marco es del genero Masculino, y denota que su estatus de relacioin no ha sido capturado o lo mantinene privado esto generar la actualizacion de los valores de las variables 
+      generoUsuario="F"
+      estatusRelacionSentimental=null
+
+      console.log(`El usuario: ${(nombreUsuario)}, se ha logrado exitosaamente,al tener acceso a su informacion de perfil podemos deducir que es 
+      del genero ${generoUsuario}y que su estatus de relacion es: ${estatusRelacionSentimental} y su ultima `)
+
+

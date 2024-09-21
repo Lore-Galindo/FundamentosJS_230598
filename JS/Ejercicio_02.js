@@ -226,20 +226,59 @@ let fecha_UltimoPost;
 //en la HU (Historia de usuario),que el usurio deswea lograrse debera ingresar su numbero telefonico o correo electronico y una contraseña que deberemos guardar en las variables previamente declaradas 
 //Supongamos que el usuario:Lorena Galindo con correo electronico lorena01galindo@.gmail.com DESEA INGRESAR CON SU CONTRASEÑA :pass123
 
-nombreUsuario="lorena01galindo@.gmail.com";
-passUsuario="pass123";
+nombreUsuario = "Lorena.galindo@gmail.com";
+passUsuario = "pass123";
 
-// en este momemto de ejecucion del sistema no sabemos sus genero, ni su estatus de relacion sentimkemtal.
+// En este momento de ejecución del sistema no sabemos su género, ni su estatus de relación sentimental.
 
-console.log(`El usuario: ${nombreUsuario} esta intentando lograrse con una contraseña de:
-    ${passUsuario}`);
-     // Lo que prosigue es  que el sistema contejara los datos ingresados con la base de datos y en el caso de que los datos sean corresctos comenzara la sesion en la plataforma actualizaremos estos valores
-     
-     //Dado que Marco es del genero Masculino, y denota que su estatus de relacioin no ha sido capturado o lo mantinene privado esto generar la actualizacion de los valores de las variables 
-      generoUsuario="F"
-      estatusRelacionSentimental=null
+console.log(`El usuario: ${nombreUsuario} esta intentando logear con una contraseña de: ${passUsuario}`)
 
-      console.log(`El usuario: ${(nombreUsuario)}, se ha logrado exitosaamente,al tener acceso a su informacion de perfil podemos deducir que es 
-      del genero ${generoUsuario}y que su estatus de relacion es: ${estatusRelacionSentimental} y su ultima `)
+// Lo que prosigue es que el sistema contejara los datos ingresados con la base de datos y en caso de que los datos sean correctos comenzará la sesión en la plataforma actualizando estos valores.
 
+// Dado que Marco es del genero Másculino, y denota que su estatus de relación no ha sido capturado o lo mantiene privado esto generar la actualización de los valores de las variables
+generoUsuario = "F";
+estatusRelacionSentimental = null
 
+console.log(`El usuario: ${nombreUsuario}, se ha logeado exitosamente, al tener accesoa  su información de perfil podemos deducir que es del género ${generoUsuario} y que su estatus de relación es ${estatusRelacionSentimental} y su última publicación la realizó el: ${fecha_UltimoPost}`)
+
+// Comparando NULL vs UNDEFINED
+// Si bien UNDEFINED y NULL tienen el mismo valor, no tienen el mismo tipo de dato
+// identidad mismo tipo de valor y valor
+// equidad mismo valor
+
+console.log("Comparación de la equidad entre Undefined y Null:")
+console.log(
+    (fecha_UltimoPost==estatusRelacionSentimental)?
+    "Ambas variables tienen el mismo valor":
+    "Las variables no tienen el mismo valor"
+);
+
+console.log("Comparación de la identidad entre Undefined y Null:")
+console.log(
+    (fecha_UltimoPost===estatusRelacionSentimental)?
+    "Ambas variables tienen el mismo valor":
+    "Las variables no tienen el mismo valor"
+);
+
+// console.log("Comparación de la equidad ente Undefined y Null")
+// (fecha_ultimoPost==estatusRelacionSentimental)?
+//     console.log("Ambas variables tienen el mismo valor"):
+//     console.log("Las variables no tienen el mismo valor");
+
+//     console.log("Comparación de la identidad entre Undefined y Null")
+// (fecha_ultimoPost===estatusRelacionSentimental)?
+//     console.log("Ambas variables tienen el mismo valor y  tipo de dato"):
+//     console.log("Las variables no tienen el mismo tipo de dato");
+
+// 8. Function (Funciones)
+console.warn("---Tipo de Dato FUNCTION (Función)")
+
+// Declaramos una función que nos permita recibir un parámetro en este caso el nombre de la persona a saludar, y le enviamos un saludo, esta función la asignamos a una constante.
+
+const saludar = function(nombre){return `Hola, ${nombre}!`}
+
+// Invocamos a la función declarada
+console.log(saludar('Lorena'));
+
+// Y que tipo de dato tiene esta constante
+console.log(`El tipo de dato de la constante saludar es: ${typeof(saludar)}`);

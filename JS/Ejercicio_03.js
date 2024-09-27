@@ -257,8 +257,61 @@ console.log("Imprimimos la estructura y valores del objeto PEDIDO")
 console.table(Pedido);
 
 //Suponiendo que el usuarios ya realizo el pago el pédido se convertira en una VENTA que requiere informacion de ambos objetos
+//SuponiendO nque el usuario ya realizo el pago se convertira en una VENTA que requiere informacion de ambos objetos
+//IMPORTANTE:ASSIGN ,NO SOLO PERMITE LA FUISION DE 2 O MAS OBJETOS,tambien mita los objetos originales ,perdiendo el valor original del ID 
 const Venta = Object.assign(Producto,Pedido)
 console.log("Consultamos este nuevo objeto VENTA")
 console.table(Venta)
+//
+
+//Union de Objetos usando SPREAD para evitar la perdidad de informacion con objetos que comparten el mismo nombre en sus propiedades 
+
+
+console.log("%c11.Union de Objetos usando el SPREAD OPERATOR(...)",style_console);
+
+//pARCHAMOS EL ERROR ,REINOICANDO EL VALOR DEL PRODUCTO ID al original producto.ID=100;
+
+console.table(Producto)
+console.table(comprador)
+console.table(Pedido)
+
+const Venta2 =
+{
+   producto: {...Producto},
+   comprador: {...comprador},
+   pedido: {...Pedido}
+}
+console.log("Funcionamos los 3 objetos en uno nuevo,sin perdida de informacion")
+console.log(Venta2)
+console.table(Venta2)
+
+console.log("%c12.Mutabilidad POST Union de Objetos ",style_console);
+//vamos a verificar el estatus de mutabilidad de los objetos 
+console.log("Vamos a verificar el estatus de muytabilidad del objeto PEDIDO")
+console.log(`Esta el objeto de Pedido congelado ? :${Object.isFrozen(Pedido)}`)
+console.log(`Esta el objeto de Pedido sellado ? :${Object.isSealed(Pedido)}`)
+
+ 
+console.log("Vamos a verificar el estatus de muytabilidad del objeto COMPRADOR")
+console.log(`Esta el objeto de Pedido congelado ? :${Object.isFrozen(comprador)}`)
+console.log(`Esta el objeto de Pedido sellado ? :${Object.isSealed(comprador)}`)
+
+console.log("Vamos a verificar el estatus de muytabilidad del objeto PRODUCTO")
+console.log(`Esta el objeto de Pedido congelado ? :${Object.isFrozen(Producto)}`)
+console.log(`Esta el objeto de Pedido sellado ? :${Object.isSealed(Producto)}`)
+
+//Modificamos la estrtuctura de productos,agregando una nueva propiedad
+Producto[`isLegacy` ]=false;
+console.log(Producto)
+console.log(Venta2)
+
+
+
+
+
+
+
+
+
 
 

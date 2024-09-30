@@ -6,11 +6,15 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 
 ## Historial de Prácticas
 
-|No.|Descripción|Estatus
-|--|--|--|
-|1.|Metodología de Evaluación|🤣Finalizado|
-|2.|Inicialización del Proyecto de Fundamentos de JS|❤️Activa|
-|3.|Ejercicio 01: Declaracion de Variables en JS|🎂Activa|
+
+|No.|Descripción|potenciador|Estatus
+|--|--|--|--|
+|1.|Metodología de Evaluación|1|🤣Finalizado|
+|2.|Inicialización del Proyecto de Fundamentos de JS|5|❤️Finalizado|
+|3.|Ejercicio 01: Declaracion de Variables en JS (Undefined/Boolean/Number)|10|🎂Finalizado|
+|4.|Ejercicio 01: Declaracion de Variables en JS (String/BigInt/Null/Functio)|6|🎂Finalizado|
+|5.|Introduccion a objetos||❤️activa|
+|
 
 
 ### Autor

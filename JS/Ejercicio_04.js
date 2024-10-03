@@ -40,7 +40,7 @@ console.log(`¿Qué tipo de dato es un arreglo? ${typeof(mesesAnio)}`)
 console.log("Declarar un arreglo mixto")
 const saludar= function(nombre){return `Hola, ${nombre}!`}
 
-let arregloMixto=["String", 9, 45.26,-200,-.16853,Symbol("TANIA"), 'z', false, BigInt(1111112222222333334444444555566666777), true, {latitud:"20°18'0\" N" , longitud: "97°58'00\" W" , altitud:796}, saludar, null]
+let arregloMixto=["String", 9, 45.26,-200,-.16853,Symbol("Lorena"), 'z', false, BigInt(1111112222222333334444444555566666777), true, {latitud:"20°18'0\" N" , longitud: "97°58'00\" W" , altitud:796}, saludar, null]
 
 console.log(arregloMixto)
 console.table(arregloMixto)
@@ -69,6 +69,7 @@ console.log("Declarando una matriz regular")
 //Una matriz es uuna estructura de datos multidimensional (tabla) de n columnas o m filas
 
 let matriz=[[1,2,3,4], ['a','b','c','d']]
+
 
 //Este es una matriz regular de 4x4
 
@@ -120,6 +121,100 @@ console.log(`Y para la matrizIrregular?`)
 let numeroFilas=matrizIrregular.length
 for(let i = 0; i < numeroFilas; i++)
     console.log(`La longitud de la fila ${[i]} es = ${matrizIrregular[i].length}`)
+
+console.log("%c5.- Agregar un nuyevo elemento a un arreglo (PUSH)", style_console);
+
+let estudiantes = ["Angel Rufino","Idai Vargas","Daniel Bravo","Esther Gonzalez","Ailton Arriaga"]
+console.log("Los elmentos actuales del arreglo son: ")
+console.table(estudiantes)
+console.log(" aAgregamos a un jnuevo estudiante llamado: Abril Guzman")
+estudiantes.push("Abril Guzman")
+console.log("Despues de agregarla los elementos del arreglo son: ")
+console.table(estudiantes)
+console.log("¿que pasa con los Mixtos")
+console.log("El arregloMixto actualmente tiene los soguientes elemento:")
+console.table(arregloMixto);
+console.log("Agregamos la palabra: \"Hola\",como nuevo elemento")
+arregloMixto.push("Hola");
+console.log("Y tambien agregamos el mnumero -3128816666556556855666.6666669669,siendo un BIgInt")
+arregloMixto.push(BigInt(-3156666665565998746996656.255596952699666));
+console.log("Despues den estas dos operaciones,el arreglo queda con los siguientes elementos:");
+console.table(arregloMixto)
+
+console.log("%c6.- Agregar un nuevo elemento a un arreglo (UNSHIFT) en la posicion inicial)", style_console);
+console.table(estudiantes)
+console.log("Ahora agregaremos a Abishai Flores,al comienzo de arreglo")
+estudiantes.unshift("Abishai Flores")
+console.log("La lista qactual es: ")
+console.table(estudiantes)
+
+console.log("%c7.- Eliminar elementos de un arreglo", style_console)
+console.log("El  AREGLO TIENE LOS SIGUIENTES ELEMENTOS: ")
+console.table(estudiantes)
+console.log("Para este caso,eliminaremos Abril Guzman en la ultima posion")
+estudiantes.pop();
+console.log("Despues de eliminar el arreglo uedo de la siguiente manera:")
+console.table(estudiantes);
+
+console.log("%c8.- Eliminar el elemento de un arreglo en la ultima posicion(SHIFT)", style_console)
+console.log("El  AREGLO TIENE LOS SIGUIENTES ELEMENTOS: ")
+console.table(estudiantes)
+console.log("Para ete caso,eliminaremos a Abishai Flores en la primera posicion")
+estudiantes.shift();
+console.log("Despues de eliminar el arreglo quedo de la siguiente manera:")
+console.table(estudiantes);
+
+console.log("%c9.- Modifica  un arreglo en un arreglo con posuicion definida (SPLICE)", style_console)
+console.log("El arreglo original tiene los elementos: ")
+console.table(estudiantes)
+console.log("Dividir el areglo en uno nuevo eliminando cierto elementos en base a su posicion")
+//cuando la funcion splice recibe un solo parametro eliminara los elementos de esta posicion en adelante
+
+estudiantes.splice(2)
+console.table(estudiantes)
+ //cuaando la funcion splice recibe 2 parametros elimina todos los elemntos que no esten en ese rango 
+ estudiantes.push("Zyanya Zacatenco")
+ estudiantes.push("Tania Ibarra")
+ estudiantes.push("Juvenal Viveros")
+ estudiantes.push("Marco Rios")
+ estudiantes.push("Jonathan Baldemar");
+ console.log("Se han agregado 5 nuevos estudiante, porlo que el arreglo es:")
+ console.log(estudiantes);
+ console.log("Ahora ya tenemos los elementoslos elentos suficientes para alicaciones el metodo splice con dos parametros que seran 3,5")
+ estudiantes.splice(3,5)
+console.log("resultando en: ")
+console.table(estudiantes);
+// Splice sirve tambien para insertar elementos en posiciones especificas,ahora necesitamos insertar a :"Antonio Ocpaco" entre "Angel Rufino" "Idai Vargas"
+console.log("Ahora vamos a insertar a \"Angel Rufino\" en los elementos de la posicion por \"Brandon Leon \"")
+estudiantes.splice(0,1,"Brandon Leon");
+console.log("resultado en: ")
+console.table(estudiantes);
+
+console.log("%c10.- Metodos para la manipulacion de Arreglos INMUTABLES", style_console);
+let signosZodiacales = ["Aries","Tauro","Gemininis","Cancer","Leo","Virgo","Libra","Escorpio","Sagitario","Capricornio","Acuario","Piscis"]
+
+//Destructuracion de arreglos
+
+let [signo1,,signo3,,,,signo7,,,,]=signosZodiacales
+console.log(`El primer signo zodical es: ${signo1}`)
+console.log(`El tercero signo zodical es: ${signo3}`)
+//console.log(`El cuarto signo zodical es: ${signo4}`)
+console.log(`El septimo signo zodical es: ${signo7}`)
+
+
+
+//congelamos el areglo volvuiendo INMUTABLE
+Object.freeze(signosZodiacales);
+
+
+
+
+
+
+
+
+
+
 
 
 

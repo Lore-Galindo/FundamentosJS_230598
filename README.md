@@ -9,11 +9,13 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 
 |No.|Descripción|potenciador|Estatus
 |--|--|--|--|
-|1.|Metodología de Evaluación|1|🤣Finalizado|
-|2.|Inicialización del Proyecto de Fundamentos de JS|5|❤️Finalizado|
-|3.|Ejercicio 01: Declaracion de Variables en JS (Undefined/Boolean/Number)|10|🎂Finalizado|
-|4.|Ejercicio 01: Declaracion de Variables en JS (String/BigInt/Null/Functio)|6|🎂Finalizado|
-|5.|Introduccion a objetos||❤️activa|
+|1.|Metodología de Evaluación|1|✔Finalizado|
+|2.|Inicialización del Proyecto de Fundamentos de JS|5|✔Finalizado|
+|3.|Ejercicio 01: Declaracion de Variables en JS (Undefined/Boolean/Number)|10|✔Finalizado|
+|4.|Ejercicio 02: Declaracion de Variables en JS (String/BigInt/Null/Functio)|6|✔Finalizado|
+|5.|Ejercicio 03: Objetos|19|✔Finalizada|
+|6.|Ejercicio 04:Arreglos|indefinida|🍁activa|
+
 |
 
 

@@ -1,5 +1,5 @@
 //Estilización de los mensajes de salida
-const bg = "linear-gradient(11deg, rgba(200,150,360,1) 0%, rgba(260,129,12,1) 33%, rgba(255,19,260,1) 86%)";
+const bg = "linear-gradient(11deg, rgba(200,150,360,1) 0%, rgba(270,129,12,1) 33%, rgba(255,19,260,1) 90%)";
 const style_console = `background: ${bg}; color: white; border-radius: 6px; padding: 4px; font-size: 1.0rem; font-weight: bold`
 
 
@@ -95,7 +95,7 @@ else
     horarioVerano=false;
 }
 
-console.log("%c2.-Oporador Ternario (validaciuon?cumple:no_cumple)", style_console)
+console.log("%c2.-Oporador Ternario (validacióncumple:no_cumple)", style_console)
 //En javaScript existe una operacion simplificada que valida si una condicion se cumple o no, ty que hacer en cada caso 
 
 const edadPersona = 18;
@@ -139,5 +139,103 @@ function determinarGeneracion(anio) {
 }
 
 console.log(determinarGeneracion(anioNacimiento));
+
+console.log("%c4.Manejo de Excepciones  (TRY / CATCH) ", style_console)
+
+//En algunasocasiones existiran errores que no son culpas del programa,si no del usuario.la red,el so e incluuso del programa, o incluso de un middleware.pero que si duda debemos controlar para evitar las fallas de ejecucion.
+ 
+console.log("Intentamos dividir el resultado es: ")
+try{//intenta
+let result= 0/10 //dividri un entero entre 0
+console.log(result)
+}
+catch(error)
+{
+    console.log("ocurrio un error"+error.message);
+}
+ 
+console.log("Intentamos dividir el resultado es:")
+try{//intenta
+let result= 10/0 //dividri un entero entre 0
+console.log(result)
+}
+catch(error)
+{
+    console.log("ocurrio un error"+error.message);
+}
+ 
+console.log("Intentamos dividir \"a\"/0 el resultado es: ")
+try{//intenta
+let result= "a"/0 //dividri un entero entre 0
+console.log(result)
+}
+catch(error)
+{
+    console.log("ocurrio un error"+error.message);
+}
+ 
+console.log("Intentamos dividir ")
+try{//intenta
+let result= a / 10; //dividri un entero entre 0
+console.log(result)
+}
+catch(error)
+{
+    console.log("ocurrio un error"+error.message);
+}
+
+ 
+console.log("Intentamos dividir :el valor de la variable x / entre el valor de la variable y,el resultado es: ")
+try{//intenta
+let x=8,y=2,result=x/y; //dividir dos variables definidas
+console.log(result)
+}
+catch(error)
+{
+    console.log("ocurrio un error"+error.message);
+}
+
+console.log("%c5.Controlde ciclos (BREAK / CONTINUA )) ", style_console)
+//eN ALGUNAS OCASIONES SERA IMPORTANTE DETENER UN CICLO DE MANERA ABRUPTA PARA CONTROLAR CASOS ESPECIALES EN UN CICLO ...
+console.log ("vamos a contar 1 al 10.....")
+for(let num=1; num <=10; num++)
+    console.log(num);
+
+
+console.log("Ahora necesitamos que si llegas al 7 pares de contar... supóniendo que solo por hoy es de mala suerte...")
+
+for (let num=1; num<=10;num++)
+    if(num==7)
+        break;
+    else
+    console.log(num);
+
+console.log("Ahora necesitamos saber si llegas al 7 te saltes ese numero y continues")
+
+for (let num=1; num<=10;num++)
+        if(num==7)
+            continue;
+        else
+        console.log(num);
+console.log("%c5.Ciclo Iterativo - (FOR) )) ", style_console)
+
+//Recorre de manera iterativa (i,de incremental o decremetal)
+
+console.log("Los dias de la semana son en orde ascendente son:")
+let dias =["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"]
+
+for (let i =0;i<dias.length;i++)
+    console.log(dias[i])
+
+console.log("Ahora vamos a imprimir los meses en orden descendentes..")
+const meses=[]
+
+
+
+
+
+    
+
+
 
 
